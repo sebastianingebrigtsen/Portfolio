@@ -1,0 +1,154 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Project Card Styles */
+.project-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 1rem; /* Rounded corners for the card */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+.project-card .card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.project-card .btn-outline-primary {
+    border-width: 2px;
+}
+
+.project-card .btn-outline-primary:hover {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+}
+
+/* Card Footer */
+.card-footer {
+    background: none;
+    border-top: none;
+}
+
+@media (max-width: 767px) {
+    .project-card {
+      margin-bottom: 2rem; /* Space between cards on smaller screens */
+    }
+}
+
+/* Profile Picture Styles */
+#profilePicture {
+    max-width: 250px; /* Smaller size for the picture */
+    border-radius: 15px; /* Rounded corners */
+}
+
+/* Column Item Styles */
+.column-item h1 {
+    color: black;
+    font-size: 3em;
+}
+
+.column-item p {
+    font-size: 1.2em;
+}
+
+/* Icon Wrapper Styles */
+.icon-wrapper img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50%; /* Make the image round */
+    margin-bottom: 20px; /* Space below the icon */
+}
+
+/* About Me Section Styles */
+.about-me-section {
+    color: white;
+    padding: 50px 10%; /* Adjusted padding */
+}
+
+/* Footer Styles */
+.footer-logo {
+    width: 100px; /* Example width */
+}
+
+.slogan {
+    font-style: italic;
+}
+
+.footer i {
+    font-size: 1.5rem; /* Example size */
+}
+
+.contact-section {
+    position: relative;
+    z-index: 10; /* Ensure this is above the footer */
+}
+
+.footer {
+    position: relative;
+    z-index: 5; /* Lower z-index than the contact section */
+    margin-top: -100px; /* Negative margin to pull the footer upwards */
+    padding-top: 100px; /* Padding to push the footer content back down */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .display-2 {
+        font-size: 3.5rem; /* Adjusted size */
+    }
+
+    .work-card {
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .work-card img {
+        border-radius: 5px; /* Match parent's border-radius */
+    }
+
+    .work-card:hover {
+        transform: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .work-card .overlay {
+        border-radius: 5px;
+        opacity: 0.9; /* Slightly less transparent */
+    }
+}
+
+@keyframes neonpunkEffect {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .neonpunk {
+    background: linear-gradient(-45deg, #ff006e, #f46036, #ffbe0b, #8338ec, #3a86ff);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: neonpunkEffect 15s ease infinite;
+  }
+
+  .neonpunk-background {
+    background: linear-gradient(-45deg, #ff006e, #f46036, #ffbe0b, #8338ec, #3a86ff);
+    background-size: 400% 400%;
+    color: #fff; /* Ensure text is visible */
+    animation: neonpunkEffect 15s ease infinite;
+  }
